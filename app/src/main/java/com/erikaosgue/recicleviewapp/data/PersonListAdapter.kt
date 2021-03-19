@@ -14,7 +14,8 @@ import com.erikaosgue.recicleviewapp.model.Person
 class PersonListAdapter(private val list: ArrayList<Person>,
 private val context: Context): RecyclerView.Adapter<PersonListAdapter.ViewHolder>() {
 
-    inner class ViewHolder(itemView: View, context: Context): RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder constructor(itemView: View, context: Context): RecyclerView.ViewHolder(itemView) {
+
         fun bindItem(person: Person){
             val name: TextView = itemView.findViewById<TextView>(R.id.name)
             val age: TextView = itemView.findViewById<TextView>(R.id.age)

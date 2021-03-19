@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         adapter = PersonListAdapter(personList!!, this)
 
         // Set Up the List (RecycleView)
-        activityMainBinding.recycleView.layoutManager = layoutManager
-        activityMainBinding.recycleView.adapter = adapter
+        activityMainBinding.recycleViewId.layoutManager = layoutManager
+        activityMainBinding.recycleViewId.adapter = adapter
 
         //Loading data
         val faker = Faker()
